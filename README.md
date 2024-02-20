@@ -30,8 +30,4 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 For running the app on local, in case of any change in verify credentials you need to update the baseUrl  in "target" field in proxy.conf.json. Update the clientId, clientSecret, apiClientId and apiClientSecret in environments/environment.ts
 
-<<<<<<< HEAD
 After changes start the angular app using "npm start"
-=======
-After changes start the angular app using "npm start"
->>>>>>> 990b96f (Angular Authentication Webapp with Verify)
