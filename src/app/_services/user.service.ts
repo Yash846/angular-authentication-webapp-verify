@@ -31,12 +31,12 @@ export class UserService {
     const body = {
       grant_type: 'client_credentials',
       scope: 'openid',
-      client_id: environment.clientId,
-      client_secret: environment.clientSecret,
+      client_id: environment.apiClientId,
+      client_secret: environment.apiClientSecret,
     };
     try {
       const response = await axios.post(
-        `/api/v1.0/endpoint/default/token`,
+        `/api/oauth2/token`,
         new URLSearchParams(body).toString(),
         {
           headers: {
@@ -58,8 +58,8 @@ export class UserService {
       password: password,
       scope: 'openid',
       username: email,
-      client_id: environment.apiClientId,
-      client_secret: environment.apiClientSecret,
+      client_id: environment.clientId,
+      client_secret: environment.clientSecret,
     };
     try {
       const response = await axios.post(

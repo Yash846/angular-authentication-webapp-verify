@@ -34,10 +34,11 @@ export class DashboardComponent implements OnInit {
     let token = localStorage.getItem('login_access_token') || '';
     let id = ''
     const response = await this.userService.getUserData(token);
+    console.log('userData', response)
     this.userData = response.data
 
     // const res = await this.userService.getStats();
-    // console.log('res', res)
+    console.log('userData', this.userData)
 
     this.userService.getStats().subscribe(
       (data: any)=>{
