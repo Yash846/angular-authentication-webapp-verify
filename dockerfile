@@ -27,7 +27,7 @@
 # EXPOSE 80
 
 # CMD ["nginx", "-g", "daemon off;"]
-
+  
 # Use an official Node runtime as the base image
 FROM node:18-alpine AS build
 
