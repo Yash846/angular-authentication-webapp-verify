@@ -5,12 +5,13 @@
 export const environment = {
   production: false,
   apiBaseUrl: 'http://localhost:5000',
-  baseUrl: 'https://cloudidentity1234.ice.ibmcloud.com',
-  apiClientId: '1fd69d1c-abc5-42fe-9c7f-aa3ed3920b15',
-  apiClientSecret: 'S3tDIFyGVP',
-  clientId: '70c7f342-df45-48de-a2fa-efb897f6892c',
-  clientSecret: '5Q1CAx0sjr'
-
+  baseUrl: 'PLACEHOLDER_baseUrl',
+  clientId: 'PLACEHOLDER_clientId',
+  apiClientId: 'PLACEHOLDER_apiClientId',
+  clientSecret: 'PLACEHOLDER_clientSecret',
+  apiClientSecret: 'PLACEHOLDER_apiClientSecret',
+  redirectUri: 'http://localhost:4200',
+  scope: 'openid',
 };
 
 /*
